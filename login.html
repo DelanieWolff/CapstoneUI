@@ -7,21 +7,28 @@
     <title>Capstone Masterpage</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Fern-Login-Form.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
 </head>
 
 <body style="height: 643px;">
-    <div style="font-family: Montserrat, sans-serif;"><img src="assets/img/lenfest.png" width="207" height="102" style="margin-left: 28px;margin-top: 12px;">
-        <nav class="navbar navbar-light navbar-expand-md py-3" style="background: #a41e35;height: 77px;">
-            <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1" style="margin-right: 0px;padding-left: 0px;">
-                    <ul class="navbar-nav ms-auto"></ul><button class="btn btn-primary" type="button" style="background: rgb(255,255,255);color: rgb(0,0,0);font-family: Montserrat, sans-serif;border-radius: 36px;margin: 8px;">View Inactive</button><button class="btn btn-primary" type="button" style="background: rgb(255,255,255);color: rgb(0,0,0);font-family: Montserrat, sans-serif;border-radius: 36px;margin: 8px;">View Timesheet</button><button class="btn btn-primary" type="button" style="background: rgb(255,255,255);color: rgb(0,0,0);font-family: Montserrat, sans-serif;border-radius: 36px;margin: 8px;">Create Worker</button><button class="btn btn-primary" type="button" style="background: rgb(255,255,255);color: rgb(0,0,0);font-family: Montserrat, sans-serif;border-radius: 36px;margin: 8px;">View Summaries</button><button class="btn btn-primary" type="button" style="background: rgb(255,255,255);color: rgb(0,0,0);font-family: Montserrat, sans-serif;border-radius: 36px;margin: 8px;">Notify</button><button class="btn btn-primary" type="button" style="background: rgb(255,255,255);color: rgb(0,0,0);font-family: Montserrat, sans-serif;border-radius: 36px;margin: 8px;">Logout</button>
-                </div>
+    <div class="text-center" style="font-family: Montserrat, sans-serif;border-bottom: 1px solid var(--bs-border-color-translucent) ;"><img src="assets/img/lenfest.png" width="266" height="140" style="margin-left: 28px;margin-top: 12px;"></div>
+    <div class="text-center justify-content-center align-items-center align-content-center" style="color: var(--bs-border-color-translucent);height: 379px;">
+        <div class="card" style="background: #A41E35;border-radius: 47px;margin-top: 5%;width: 426.05px;height: 316.25px;display: flex;margin-right: auto;margin-left: auto;">
+            <div class="card-body">
+                <h4 class="card-title" style="color: #212529;">Login to your account</h4>
+                <h6 style="color: var(--bs-card-bg);font-family: Montserrat, sans-serif;font-style: italic;font-size: 11px;">Welcome back! Please enter your details.</h6>
+                <div style="height: 26px;"></div>
+                <form class="user">
+                    <div class="mb-3"><input class="form-control form-control-user" type="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address" name="email" required=""></div>
+                    <div class="mb-3"><input class="form-control form-control-user" type="password" placeholder="Password" name="password" required=""></div>
+                    <div class="row mb-3">
+                        <p id="errorMsg" class="text-danger" style="display:none;">Paragraph</p>
+                    </div><button class="btn d-block btn-user w-100" id="submitBtn" type="button" style="background: #212529;color: rgb(248,248,248);font-family: Montserrat, sans-serif;border-radius: 26px;">Login</button>
+                </form>
             </div>
-        </nav>
+        </div>
     </div>
-    <div style="background: #D9D9D9;height: 37px;"></div>
-    <div style="color: var(--bs-border-color-translucent);height: 338px;"></div>
     <footer style="height: 34px;border-top: 1px solid rgb(217,217,217);"></footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
